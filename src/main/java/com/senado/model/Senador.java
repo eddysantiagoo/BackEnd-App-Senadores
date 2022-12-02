@@ -17,14 +17,14 @@ public class Senador {
 	private String nombre;
 	private String apellidos;
 	private String departamento;
-	private String partido;
+	private Integer partido;
 	private Boolean activo;
 	
 	public Senador() {
 		super();
 	}
 
-	public Senador(Integer id, String nombre, String apellidos, String departamento, String partido, Boolean activo) {
+	public Senador(Integer id, String nombre, String apellidos, String departamento, Integer partido, Boolean activo) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -66,11 +66,11 @@ public class Senador {
 		this.departamento = departamento;
 	}
 
-	public String getPartido() {
+	public Integer getPartido() {
 		return partido;
 	}
 
-	public void setPartido(String partido) {
+	public void setPartido(Integer partido) {
 		this.partido = partido;
 	}
 
